@@ -1,0 +1,56 @@
+{% extends "../bootstrap.html" %}
+{% load bootstrap4 %}
+{% block bootstrap4_content %}
+<style>
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E2E0E0;
+}
+.border-bottom{
+    box-shadow: 0 .125rem .25rem #396AA1!important;
+}
+.breadcrumb{
+    background-color: #fff;
+}
+.activeElementUrl{
+    font-weight: bold; color: #396AA1!important;
+}
+a{
+    text-decoration: none!important;
+}
+.activebutton{
+    background-color: #396AA1!important;
+    color: #fff
+}
+.inline input{
+    display:inline-block;
+}
+</style>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom ">
+        <a class=" my-0 mr-md-auto font-weight-normal navbar-brand">
+            <img src="https://uet.vnu.edu.vn/wp-content/uploads/2017/02/logo2_new.png" alt="Logo" width="80" height="80">
+            Hệ thống đánh giá và tư vấn học tập
+        </a>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a id="statisticaladmin" class="p-2 text-muted" href="{% url 'statisticaladmin' %}">Thống kê</a>
+            <a id="scoreforecastadmin" class="p-2 text-muted" href="{% url 'scoreforecastadmin' %}">Dự báo kết quả học tập</a>
+            <a id="suggestioncourseadmin" class="p-2 text-muted" href="{% url 'suggestioncourseadmin' %}">Gợi ý môn học</a>
+            <a id="manageuser" class="p-2 text-muted" href="{% url 'manageuser' %}">Quản trị</a>
+            
+        </nav>
+        <a href="#" class="btn activebutton">Admin</a>
+    </div>       
+    <!-- {% autoescape off %}{% bootstrap_messages %}{% endautoescape %} -->
+    <script>
+        let pathname_url = window.location.pathname; 
+        let pathname_url_active = pathname_url.split("/")[2];
+        function activaCurrentUrlElement(){            
+            let element = document.getElementById(pathname_url_active);
+            if (element != null) element.classList.add("activeElementUrl");     
+            
+        }
+        activaCurrentUrlElement();
+    </script>
+    {% block content %}(no content){% endblock %}
+{% endblock %}

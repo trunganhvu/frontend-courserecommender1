@@ -1,0 +1,64 @@
+{% extends "./base.html" %}
+{% block title %}Hệ thống đánh gía và tư vấn kết quả học tập{% endblock %}
+{% block content %}
+<style>
+
+</style>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item"><a href="#">Quản trị</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Kết quả học tập</li>
+        </ol>
+    
+        <div class=" card">
+            <div class="card-header">
+                <h5>Tổng hợp kết quả học tập</h5>
+            </div>
+            <div class="card-body ">
+                <div class="card-title row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn activebutton">Nhập file</button>
+                    <button type="button" class="btn btn-primary">Xuất file</button>
+                    <button type="button" class="btn btn-primary">Tạo bản ghi</button>
+                </div>
+                
+                <div class=" form-inline col-sm-6">
+                    <input class="form-control col-sm-9 inline" id="myInput" type="text" placeholder="Tìm kiếm...">
+                    <div class="col-sm-1"></div>
+                    <input class="btn activebutton col-sm-2 inline " type="button" value="Tìm kiếm">
+                </div>
+                </div>
+                <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Mã sinh viên</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Khóa</th>
+                        <th scope="col">Năm học</th>
+                        <th scope="col">Ngành học</th>
+                        <th scope="col">Kết quả học tập</th>
+                        <th scope="col">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>12345676</td>
+                        <td>Trung Anh</td>
+                        <td>K62</td>
+                        <td>2019-2020</td>
+                        <td>Công nghệ thông tin</td>
+                        <td>3.0</td>
+                        <td>sửa xóa</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+            
+            
+        </div>
+    </div> 
+{% endblock %}

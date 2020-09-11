@@ -1,0 +1,46 @@
+{% extends "./base.html" %}
+{% block title %}Hệ thống đánh gía và tư vấn kết quả học tập{% endblock %}
+{% block content %}
+<style>
+</style>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Sinh viên</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Dự báo kết quả học tập</li>
+        </ol>
+    
+        <div class=" card">
+            <div class="card-header">
+                <h5>Điểm GPA dự đoán:</h5>
+            </div>
+            <div class="card-body ">
+                <div class="card-title row ">
+                
+                    
+                </div>
+                <input class="form-control" id="myInput" type="text" placeholder="Tìm kiếm môn học.."><br>
+                <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ma môn học</th>
+                        <th scope="col">Tên môn học</th>
+                        <th scope="col">Điểm tổng kết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>INT2204 1</td>
+                        <td>Đại số</td>
+                        <td>8.2</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+            
+            
+        </div>
+    </div> 
+{% endblock %}

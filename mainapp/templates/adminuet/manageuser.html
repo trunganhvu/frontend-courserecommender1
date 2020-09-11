@@ -1,0 +1,65 @@
+{% extends "./base.html" %}
+{% block title %}Hệ thống đánh gía và tư vấn kết quả học tập{% endblock %}
+{% block content %}
+<style>
+
+</style>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item"><a href="#">Quản trị</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Người dùng</li>
+        </ol>
+    
+        <div class=" card">
+            <div class="card-header">
+                <h5>Điểm GPA dự đoán</h5>
+            </div>
+            <div class="card-body ">
+                <div class="card-title row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn activebutton">Nhập file</button>
+                    <button type="button" class="btn btn-primary">Nhập file</button>
+                    <button type="button" class="btn btn-primary">Nhập file</button>
+                    <button type="button" class="btn btn-primary">Nhập file</button>
+                </div>
+                
+                <div class=" form-inline col-sm-6">
+                    <input class="form-control col-sm-9 inline" id="myInput" type="text" placeholder="Tìm kiếm môn học...">
+                    <div class="col-sm-1"></div>
+                    <input class="btn activebutton col-sm-2 inline " type="button" value="Tìm kiếm">
+                </div>
+                </div>
+                <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Mật khẩu</th>
+                        <th scope="col">Vai trò</th>
+                        <th scope="col">Khoa</th>
+                        <th scope="col">Khóa</th>
+                        <th scope="col">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>1241</td>
+                        <td>Vũ Trung Anh</td>
+                        <td>adsf8as8fa7dsa9</td>
+                        <td>Sinh viên</td>
+                        <td>Công nghệ thông tin</td>
+                        <td>K62</td>
+                        <td>sửa xóa</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+            
+            
+        </div>
+    </div> 
+{% endblock %}
